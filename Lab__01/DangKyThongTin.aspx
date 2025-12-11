@@ -6,108 +6,112 @@
 <head runat="server">
     <title>Đăng ký thông tin</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f7;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
 
-        .container {
-            width: 700px;
-            margin: 30px auto;
-            background: #fff;
-            border: 2px solid #4da6ff;
-            border-radius: 6px;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
-        }
+    .container {
+        width: 900px;
+        margin: 20px auto;
+        border: 2px solid #cc66ff;
+        padding: 0;
+    }
 
-        .header {
-            background-color: #3366ff;
-            color: white;
-            text-align: center;
-            padding: 12px;
-            font-size: 22px;
-            font-weight: bold;
-        }
+    /* Header đỏ như hình */
+    .header {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: red;
+        padding: 10px 0;
+        border-bottom: 2px solid #cc66ff;
+    }
 
-        table {
-            width: 100%;
-            padding: 25px ;
-            border-collapse: separate;
-        }
+    /* Bố cục 2 cột */
+    .row {
+        display: flex;
+    }
 
-        td.label {
-            width: 160px;
-            font-weight: bold;
-            padding: 10px 0;
-            vertical-align: top;
-        }
+    .left,
+    .right {
+        width: 50%;
+        padding: 15px;
+        border-left: 1px solid #cc66ff;
+    }
 
-        input[type="text"],
-        input[type="date"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 6px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
+    .left {
+        border-right: 1px solid #cc66ff;
+    }
 
-        #FileUpImg {
-            margin-bottom: 8px;
-        }
+    /* Tiêu đề tím */
+    .title {
+        text-align: center;
+        font-weight: bold;
+        color: #663399;
+        margin: 10px 0;
+        border-bottom: 1px solid #cc66ff;
+        padding-bottom: 5px;
+    }
 
-        #ImageHinh {
-            width: 120px;
-            height: 120px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            object-fit: cover;
-            margin-left: 10px;
-        }
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
 
-        .btn-green {
-            background-color: #28a745;
-            color: white;
-            padding: 8px 30px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 10px;
-            font-size: 16px;
-        }
+    td {
+        padding: 6px;
+        vertical-align: middle;
+    }
 
-        .btn-red {
-            background-color: #dc3545;
-            color: white;
-            padding: 8px 30px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+    td.label {
+        width: 150px;
+    }
 
-        .center {
-            text-align: center;
-            padding-top: 15px;
-        }
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 95%;
+        padding: 4px;
+        border: 1px solid #999;
+        font-size: 14px;
+    }
 
+    /* Nút giống hình */
+    .btn {
+        padding: 5px 18px;
+        background-color: #ddd;
+        border: 1px solid #aaa;
+        cursor: pointer;
+        margin-top: 10px;
+    }
 
+    .btn:hover {
+        background-color: #ccc;
+    }
 
-        #lbthongtin {
-            display: block;
-            padding: 20px;
-            font-size: 16px;
-        }
+    /* Khu vực hồ sơ khách hàng */
+    .info-item {
+        padding: 4px 0;
+        font-size: 14px;
+    }
 
-        .auto-style1 {
-            text-align: left;
-        }
+    .info-item span {
+        font-weight: bold;
+    }
 
-    </style>
+    /* Gạch chấm list */
+    .dot {
+        color: purple;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+</style>
+
 </head>
 
 <body>
